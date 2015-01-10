@@ -1,0 +1,9 @@
+{
+  "name": "disable-docwrite",
+  "title": "disable document.write()",
+  "id": "jid1-xMzaWm1KOr0oQA",
+  "description": "overrides document.write to skip crappy old adservers",
+  "author": "ernst",
+  "license": "MPL 2.0",
+  "version": "0.5"
+}
