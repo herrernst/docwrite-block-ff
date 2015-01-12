@@ -1,9 +1,9 @@
 {
-  "name": "disable-docwrite",
-  "title": "disable document.write()",
+  "name": "docwrite-block",
+  "title": "document.write()-block",
   "id": "jid1-xMzaWm1KOr0oQA",
-  "description": "overrides document.write to skip crappy old adservers",
-  "author": "ernst",
+  "description": "ignore calls to document.write() trying to write new script[src] tags, breaks some ads",
+  "author": "herr.ernst@gmail.com",
   "license": "MPL 2.0",
   "version": "0.5"
 }
