@@ -8,4 +8,7 @@ function docWriteOverride(content) {
   }
 }
 // unsafeWindow.document.write = docWriteOverride
-exportFunction(docWriteOverride, unsafeWindow.document, {defineAs: "write"});
+//don't do it in quirks mode, should improve compatibility for very old pages
+if (document.compatMode !== "BackCompat") {
+  exportFunction(docWriteOverride, unsafeWindow.document, {defineAs: "write"});
+}
