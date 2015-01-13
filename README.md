@@ -3,6 +3,9 @@
 * it blocks rendering, which is especially bad if you use ```document.write``` to add new ```<script>``` tags with an external source
 * if called on an already loaded document, it re-opens the document, effectively making it empty (white page)
 
+[HTML5 spec says](http://www.w3.org/html/wg/drafts/html/master/webappapis.html#dynamic-markup-insertion) says:
+> [...] use of this method is strongly discouraged.
+
 Still, it use used a lot by online advertising because they can get their shit together.
 After reading that [most ad-blockers use more resources](http://www.extremetech.com/computing/182428-ironic-iframes-adblock-plus-is-probably-the-reason-firefox-and-chrome-are-such-memory-hogs) (memory, CPU) than they save I had the idea of just blocking calls of ```document.write``` which would write new script tags. So this is basically an almost one-line ad-blocker.
 
